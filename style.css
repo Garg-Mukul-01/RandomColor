@@ -4,15 +4,13 @@
     box-sizing: border-box;
 }
 .box{
-    /* border:2px solid red; */
-    margin:15rem 30rem;
-    padding:1.5em 1.5em;
+    /* margin:15rem 30rem;
+    padding:1.5em 1.5em; */
+    transform: translateY(30vh);
 }
 h1{
-    display: block;
-    color:rgb(0, 0, 0);
     margin:auto;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     text-align: center;
 }
 
@@ -21,16 +19,13 @@ span{
     padding: 0rem 0.2rem;
 }
 #code{
-    /* display: inline-block; */
-    color:rgb(0, 0, 0);
     margin-top: 0.5rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-align: center;
     font-weight: bold;
 }
 .btn{
     display: block;
-    margin: auto;
     margin-top: 1rem;
     padding: 0.4rem 2rem;
     border-radius: 0.2rem;
@@ -40,14 +35,32 @@ span{
     color:black;
     font-weight: bold;
     margin-right: 1rem;
+    border: 0.01px solid transparent;
 }
 .btn:hover{
     background:linear-gradient(90deg,white 100% , grey 0%);
     color:black;
-    border: 0.2px solid black;
+    border: 0.1px solid black;
 }
 .buttons{
     display: flex;
-    justify-content: center;
+    justify-content:center;
     align-items: center;
+}
+
+/* media queries */
+
+@media screen and (max-width:480px) {
+    .box{
+        padding:1rem 1rem;
+    }
+    h1{
+        font-size: 1rem;
+    }
+    .btn{
+        display: block;
+        margin-top: 1rem;
+        padding: 0.1rem 1rem;
+        margin-right: 0.5rem;
+    }
 }
