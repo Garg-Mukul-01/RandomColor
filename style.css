@@ -4,8 +4,6 @@
     box-sizing: border-box;
 }
 .box{
-    /* margin:15rem 30rem;
-    padding:1.5em 1.5em; */
     transform: translateY(30vh);
 }
 h1{
